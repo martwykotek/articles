@@ -9,10 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.howtospring</groupId>
-    <artifactId>spring-swagger</artifactId>
+    <artifactId>swagger-spring-start</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>spring-swagger</name>
-    <description>Demo project for Spring and Swagger integration</description>
+    <name>swagger-spring-start</name>
+    <description>Initial project for Spring Boot and Swagger</description>
 
     <properties>
         <java.version>1.8</java.version>
@@ -21,13 +21,18 @@
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-hateoas</artifactId>
+            <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
+            <artifactId>spring-boot-starter-data-jpa</artifactId>
         </dependency>
 
+        <dependency>
+            <groupId>com.h2database</groupId>
+            <artifactId>h2</artifactId>
+            <version>1.4.198</version>
+        </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
